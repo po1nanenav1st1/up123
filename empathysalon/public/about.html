@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <script src="/public/js/appointment.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="parts">
+                <a href="/public/about.html" class="headerText">О нас</a>
+                <a href="/public/services.html" class="headerText">Услуги</a>
+            </div>
+            <a href="/public/index.html">
+                <img src="/public/images/logo.svg" alt="logo" id="logo" width="203.46px">
+            </a>
+            <div class="parts">
+                <a href="/public/contacts.html" class="headerText">Контакты</a>
+                <a href="" class="headerText">Записаться</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="blockteam">
+            <div class="contentTeam">
+                <div class="headTeam">
+                    <p class="meetText">MEET OUR</p>
+                    <p class="teamText">Team</p>
+                </div>
+                <div class="masters">
+                    <div class="master">
+                        <div class="master-img" width="914px" id="mas">
+                            <img src="/public/images/about/master1.png" alt="Ева" class="img-default">
+                            <img src="/public/images/about/master11.png" alt="Ева" class="img-hover">
+                        </div>
+                        <div class="textsMast">
+                            <p class="jobtitle">Ведущий стилист</p>
+                            <p class="descJob">Я <strong id="pink">Ева</strong>, ведущий стилист салона <strong
+                                    id="pink">Empathy</strong>. Работаю в бьюти-индустрии уже <strong id="pink">пять
+                                    лет</strong> и за это время нашла свой уникальный почерк.
+                                <br>
+                                <br>
+                                Я обожаю работать со сложными текстурами, создавать графичные стрижки с рваными концами
+                                и подбирать глубокие, насыщенные оттенки.
+                                <br>
+                                <br>
+                                Если ты хочешь добавить в свой образ каплю бунтарства, стать смелее и выглядеть
+                                по-настоящему нереально – я знаю, как это сделать. Приходи, и <strong id="pink">мы
+                                    создадим твой идеальный вайб!</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="master">
+                        <div class="textsMast">
+                            <p class="jobtitle">Топ-стилист</p>
+                            <p class="descJob">Меня зовут <strong id="pink">Лола</strong>, и я топ-стилист <strong
+                                    id="pink">Empathy</strong> с <strong id="pink">семилетним опытом</strong> работы. В
+                                своей практике я настоящий эксперт по креативному макияжу, аниме-эстетике и сложному
+                                нейл-арту.
+                                <br>
+                                <br>
+                                Мне нравится совмещать несочетаемое и создавать образы, которые невозможно не заметить.
+                                Я верю, что внешность – это искусство, поэтому помогаю девушкам выражать свои эмоции
+                                через яркие акценты, цветные ресницы и необычный дизайн ногтей.
+                                <br>
+                                <br>
+                                Со мной ты будешь выглядеть как главная героиня корейского клипа, и это будет твой
+                                <strong id="pink">самый
+                                    смелый и удачный эксперимент!</strong>
+                            </p>
+                        </div>
+                        <div class="master-img" width="864px" id="mas">
+                            <img src="/public/images/about/master2.png" alt="Лола" class="img-default">
+                            <img src="/public/images/about/master21.png" alt="Лола" class="img-hover">
+                        </div>
+                    </div>
+                    <div class="master">
+                        <div class="master-img" width="914px" id="mas">
+                            <img src="/public/images/about/master3.png" alt="Айя" class="img-default">
+                            <img src="/public/images/about/master31.png" alt="Айя" class="img-hover">
+                        </div>
+                        <div class="textsMast">
+                            <p class="jobtitle">Креативный директор</p>
+                            <p class="descJob">Я <strong id="pink">Айя</strong>, креативный директор салона Empathy. Мой стаж работы в индустрии
+                                красоты – <strong id="pink">десять лет</strong>, и я отвечаю за общую эстетику и атмосферу нашего пространства.
+                                <br>
+                                <br>
+                                Я создаю нежные и воздушные образы в стиле «fairy kei» и «soft girl», превращая
+                                повседневность в настоящую сказку. Мое главное умение – находить идеальные аксессуары и
+                                детали, которые подчеркивают индивидуальность каждой гостьи.
+                                <br>
+                                <br>
+                                Я знаю, как сделать так, чтобы ты чувствовала себя уютно и уверенно. Моя цель – не
+                                просто сделать красивую укладку или макияж, а подарить тебе ощущение, что <strong id="pink">ты – главная
+                                героиня своей истории!</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="booking-section">
+            <div class="booking-container">
+                <h2 class="booking-title">Записаться</h2>
+
+                <form id="bookingForm" class="booking-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                            <span class="error-msg" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
+                            <span class="error-msg" id="phoneError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group select-group">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected hidden>Услуга</option>
+                                <option value="Макияж">Макияж</option>
+                                <option value="Стрижка">Стрижка</option>
+                                <option value="Окрашивание">Окрашивание</option>
+                                <option value="Маникюр">Маникюр</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                            <span class="error-msg" id="serviceError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="date" id="date" name="date" placeholder="Дата посещения" required>
+                            <span class="error-msg" id="dateError"></span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="header">
+            <div class="parts">
+                <a href="/public/about.html" class="headerText">О нас</a>
+                <a href="/public/services.html" class="headerText">Услуги</a>
+            </div>
+            <a href="/public/index.html">
+                <img src="/public/images/logo.svg" alt="logo" id="logo" width="203.46px">
+            </a>
+            <div class="parts">
+                <a href="/public/contacts.html" class="headerText">Контакты</a>
+                <a href="" class="headerText">Записаться</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<div class="toast-notification" id="successToast">
+    <div class="toast-text">Спасибо! Мы свяжемся с вами в ближайшее время.</div>
+</div>
+
+</html>
