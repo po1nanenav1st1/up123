@@ -346,3 +346,237 @@ footer {
 .master-img:hover .img-default {
     opacity: 0; 
 }
+
+.aboutUs {
+    max-width: 1590px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aboutUsText {
+    font-family: 'miama';
+    font-size: 96px;
+    color: #F0A2CC;
+}
+.contentAb {
+    display: flex;
+    flex-direction: row;
+    gap: 57px;
+}
+.textsAb {
+    padding-top: 252px;
+    display: flex;
+    flex-direction: column;
+    gap: 158px;
+}
+.textDesc {
+    font-family: 'miama';
+    font-size: 20px;
+    color: #A69494;
+    line-height: 40px;
+    text-align: left;
+}
+.textsAb1 {
+    padding-top: 296px;
+    display: flex;
+    flex-direction: column;
+    gap: 178px;
+}
+.textDesc1 {
+    font-family: 'miama';
+    font-size: 20px;
+    color: #A69494;
+    line-height: 40px;
+    text-align: right;
+}
+.herosec {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('/public/images/main/backgl.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.herosec header {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.hero-logo-big {
+    width: 900px; 
+    margin-bottom: 10px;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8));
+}
+
+.hero-subtitle {
+    font-family: 'monr';
+    font-size: 24px;
+    color: #8B8686;
+    margin-top: -170px;
+}
+.slogan {
+    max-width: 1584px;
+    margin-top: 106px;
+    margin-left: 336px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.empathySl {
+    font-family: 'miama';
+    font-size: 96px;
+    color: #F0A2CC;
+}
+.textsSl {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.slogandesc {
+    padding-left: 132px;
+    font-family: 'monr';
+    font-size: 32px;
+    width: 896px;
+    line-height: 60px;
+    color: #988282;
+}
+#locon {
+    margin-left: 690px;
+}
+.services {
+    margin-top: 100px;
+    max-width: 1856px;
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+    background-image: url('/public/images/main/backus1.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.servicesHead {
+    padding-left: 993px;
+    font-family: 'miama';
+    font-size: 96px;
+    color: #F0A2CC;
+}
+.servicesList {
+    max-width: 1171px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.serviceOne {
+    padding-bottom: 15px;
+    width: 1171px;
+    border-bottom: 2px solid #A69494;
+    display: flex;
+    justify-content: space-between;
+}
+.titleServ {
+    font-family: 'monr';
+    font-size: 36px;
+    color: rgba(152, 130, 130, 0.86);
+}
+#arrow1 {
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#arrow1:hover {
+    transform: scale(1.08);
+}
+.decorBlock {
+    max-width: 1844px;
+    margin: 0 auto;
+    margin-top: 350px;
+}
+.empathyDec {
+    z-index: 999;
+    position: absolute;
+    top: 2950px;
+    left: 235px;
+    font-family: 'miama';
+    font-size: 150px;
+    color: #F0A2CC ;
+}
+
+.pics {
+    display: flex;
+    flex-direction: row;
+    gap: 153px;
+}
+#dec1 {
+   margin-top: 260px;
+   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#dec2 {
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#dec3 {
+    margin-top: 592px;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#dec1:hover, #dec2:hover, #dec3:hover {
+    transform: scale(1.08);
+}
+.aboutMiniBlock {
+    max-width: 1593px;
+    margin: right auto;
+    margin-top: 196px;
+    margin-bottom: 140px;
+    display: flex;
+    flex-direction: row;
+    gap: 273px;
+}
+.aboutTextsMini {
+    margin-top: 58px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.titleAbout {
+    margin-left: 400px;
+    display: flex;
+    flex-direction: row;
+    gap: 49px;
+}
+.titleMini {
+    font-family: 'miama';
+    font-size: 96px;
+    color: #F0A2CC;
+}
+#arrowpink {
+    width: 54px;
+    height: 54px;
+    margin-top: 35px;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#arrowpink:hover {
+    transform: scale(1.08);
+}
+.descMini {
+    font-family: 'monr';
+    font-size: 32px;
+    width: 939px;
+    color: #A69494;
+    text-align: right;
+}

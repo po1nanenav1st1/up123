@@ -1,12 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <script src="/public/js/appointment.js"></script>
 </head>
+
 <body>
-    
+    <section class="herosec">
+        <header>
+            <div class="header">
+                <div class="parts">
+                    <a href="/public/about.html" class="headerText">О нас</a>
+                    <a href="/public/services.html" class="headerText">Услуги</a>
+                </div>
+                <a href="/public/index.html">
+                    <img src="/public/images/logo.svg" alt="logo" id="logo" width="203.46px">
+                </a>
+                <div class="parts">
+                    <a href="/public/contacts.html" class="headerText">Контакты</a>
+                    <a href="#booking" class="headerText">Записаться</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="hero-content">
+            <img src="/public/images/logo.svg" alt="Empathy" class="hero-logo-big">
+            <p class="hero-subtitle">салон красоты</p>
+        </div>
+    </section>
+    <main>
+        <div class="slogan">
+            <div class="textsSl">
+                <p class="empathySl">Empathy</p>
+                <p class="slogandesc">станьте ярче с каждым визитом, ведь красота растет, когда о ней заботятся
+                    профессионалы, твой личный эстетический кокон</p>
+            </div>
+            <img src="/public/images/main/locon.png" alt="hair" id="locon" width="1006px">
+        </div>
+        <div class="services">
+            <p class="servicesHead">Our services</p>
+            <div class="servicesList">
+                <div class="serviceOne">
+                    <p class="titleServ">маникюр</p>
+                    <a href="/public/manicure.html"><img src="/public/images/main/arrow.png" alt="стрелка" id="arrow1"
+                            width="34px"></a>
+                </div>
+                <div class="serviceOne">
+                    <p class="titleServ">стрижка / укладка</p>
+                    <a href="/public/haircut.html"><img src="/public/images/main/arrow.png" alt="стрелка" id="arrow1"
+                            width="34px"></a>
+                </div>
+                <div class="serviceOne">
+                    <p class="titleServ">макияж / образ</p>
+                    <a href="/public/makeup.html"><img src="/public/images/main/arrow.png" alt="стрелка" id="arrow1"
+                            width="34px"></a>
+                </div>
+                <div class="serviceOne">
+                    <p class="titleServ">брови / ресницы</p>
+                    <a href="/public/lashes.html"><img src="/public/images/main/arrow.png" alt="стрелка" id="arrow1"
+                            width="34px"></a>
+                </div>
+                <div class="serviceOne">
+                    <p class="titleServ">окрашивание</p>
+                    <a href="/public/coloring.html"><img src="/public/images/main/arrow.png" alt="стрелка" id="arrow1"
+                            width="34px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="decorBlock">
+            <p class="empathyDec">EMPATHY</p>
+            <div class="pics">
+                <img src="/public/images/main/decor2.png" width="389px" height="412px" alt="декорфото" id="dec1">
+                <img src="/public/images/main/decor1.png" width="790px" alt="декорфото" id="dec2">
+                <img src="/public/images/main/decor3.png" width="356px" height="378px" alt="декорфото" id="dec3">
+            </div>
+        </div>
+        <div class="aboutMiniBlock">
+            <img src="/public/images/main/kist.png" width="381px" alt="кисти" id="kist">
+            <div class="aboutTextsMini">
+                <div class="titleAbout">
+                    <p class="titleMini">about us</p>
+                    <a href="/public/about.html"><img src="/public/images/main/arrowpink.png" alt="стрелка" id="arrowpink"></a>
+                </div>
+                <p class="descMini">Empathy — это место, где красота становится искусством. Мы создаем пастельные
+                    образы, смелые эксперименты и уютную атмосферу для тех, кто хочет быть собой. Наши мастера
+                    используют только качественные материалы, следят за трендами и вкладывают душу в каждую деталь.
+                    Здесь ты можешь расслабиться, перезагрузиться и уйти с ощущением, что ты — главная героиня своей
+                    истории</p>
+            </div>
+        </div>
+
+        <section class="booking-section">
+            <div class="booking-container">
+                <h2 class="booking-title">Записаться</h2>
+
+                <form id="bookingForm" class="booking-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                            <span class="error-msg" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
+                            <span class="error-msg" id="phoneError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group select-group">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected hidden>Услуга</option>
+                                <option value="Макияж">Макияж</option>
+                                <option value="Стрижка">Стрижка</option>
+                                <option value="Окрашивание">Окрашивание</option>
+                                <option value="Маникюр">Маникюр</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                            <span class="error-msg" id="serviceError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="date" id="date" name="date" placeholder="Дата посещения" required>
+                            <span class="error-msg" id="dateError"></span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="header">
+            <div class="parts">
+                <a href="/public/about.html" class="headerText">О нас</a>
+                <a href="/public/services.html" class="headerText">Услуги</a>
+            </div>
+            <a href="/public/index.html">
+                <img src="/public/images/logo.svg" alt="logo" id="logo" width="203.46px">
+            </a>
+            <div class="parts">
+                <a href="/public/contacts.html" class="headerText">Контакты</a>
+                <a href="" class="headerText">Записаться</a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
