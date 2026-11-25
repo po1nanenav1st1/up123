@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'monr';
-    src: url(/public/fonts/Montserrat-Regular.ttf);
+    src: url(/fonts/Montserrat-Regular.ttf);
 }
 
 @font-face {
     font-family: 'monl';
-    src: url(/public/fonts/Montserrat-Light.ttf);
+    src: url(/fonts/Montserrat-Light.ttf);
 }
 
 @font-face {
     font-family: 'miama';
-    src: url(/public/fonts/miamanueva.ttf);
+    src: url(/fonts/miamanueva.ttf);
 }
 
 @font-face {
     font-family: 'gloria';
-    src: url(/public/fonts/gloriascript.ttf);
+    src: url(/fonts/gloriascript.ttf);
 }
 
 header {
@@ -422,7 +422,7 @@ footer {
 .herosec {
     width: 1920px;
     min-height: 100vh;
-    background-image: url('/public/images/main/backgl.png');
+    background-image: url('/images/main/backgl.png');
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -500,7 +500,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 68px;
-    background-image: url('/public/images/main/backus1.png');
+    background-image: url('/images/main/backus1.png');
     background-position: left center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -637,7 +637,7 @@ footer {
 .herosecservice {
     width: 1920px;
     min-height: 1055px;
-    background-image: url('/public/images/services/backgl.png');
+    background-image: url('/images/services/backgl.png');
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -746,7 +746,7 @@ hr {
 .serviceOneCarousel {
     width: 595px;
     height: 568px;
-    background-image: url(/public/images/services/makeup.png);
+    background-image: url(/images/services/makeup.png);
     display: flex;
     flex-direction: column;
     gap: 93px;
@@ -758,7 +758,7 @@ hr {
 .serviceOneCarousel1 {
     width: 595px;
     height: 568px;
-    background-image: url(/public/images/services/haircut.png);
+    background-image: url(/images/services/haircut.png);
     display: flex;
     flex-direction: column;
     gap: 93px;
@@ -769,7 +769,7 @@ hr {
 .serviceOneCarousel2 {
     width: 595px;
     height: 568px;
-    background-image: url(/public/images/services/manicure.png);
+    background-image: url(/images/services/manicure.png);
     display: flex;
     flex-direction: column;
     gap: 93px;
@@ -780,7 +780,7 @@ hr {
 .serviceOneCarousel3 {
     width: 595px;
     height: 568px;
-    background-image: url(/public/images/services/lashes.png);
+    background-image: url(/images/services/lashes.png);
     display: flex;
     flex-direction: column;
     gap: 93px;
@@ -791,7 +791,7 @@ hr {
 .serviceOneCarousel4 {
     width: 595px;
     height: 568px;
-    background-image: url(/public/images/services/coloring.png);
+    background-image: url(/images/services/coloring.png);
     display: flex;
     flex-direction: column;
     gap: 93px;
@@ -847,23 +847,23 @@ hr {
 }
 
 .serviceOneCarousel {
-    background-image: url(/public/images/services/makeup.png);
+    background-image: url(/images/services/makeup.png);
 }
 
 .serviceOneCarousel1 {
-    background-image: url(/public/images/services/haircut.png);
+    background-image: url(/images/services/haircut.png);
 }
 
 .serviceOneCarousel2 {
-    background-image: url(/public/images/services/manicure.png);
+    background-image: url(/images/services/manicure.png);
 }
 
 .serviceOneCarousel3 {
-    background-image: url(/public/images/services/lashes.png);
+    background-image: url(/images/services/lashes.png);
 }
 
 .serviceOneCarousel4 {
-    background-image: url(/public/images/services/coloring.png);
+    background-image: url(/images/services/coloring.png);
 }
 
 
@@ -1025,4 +1025,12 @@ hr {
     font-family: 'monr';
     font-size: 40px;
     color:  #F0A2CC;
+}
+.error-toast {
+    border-color: #ff6b6b;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.error-toast.show {
+    left: 30px;
 }
