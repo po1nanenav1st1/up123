@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Окрашивание</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <script src="/public/js/appointment.js"></script>
+    <script src="/public/js/carousel.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="parts">
+                <a href="/public/about.html" class="headerText">О нас</a>
+                <a href="/public/services.html" class="headerText">Услуги</a>
+            </div>
+            <a href="/public/index.html">
+                <img src="/public/images/logo.svg" alt="logo" id="logo" width="203.46px">
+            </a>
+            <div class="parts">
+                <a href="/public/contacts.html" class="headerText">Контакты</a>
+                <a href="" class="headerText">Записаться</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contentfull">
+            <img src="/public/images/services/coloring.png" alt="hair" width="677px">
+            <div class="parttwoContent">
+                <div class="container1">
+                    <p class="titleOfService">ОКРАШИВАНИЕ</p>
+                    <p class="jobs">Креативный директор Айя</p>
+                </div>
+                <p class="descOfService">Создаем пастельные миры, радужные переливы и сложный блонд. Мы работаем с самыми смелыми оттенками, чтобы ты могла выразить себя через цвет и выглядеть нереально. Бережное отношение к волосам и использование премиальных материалов гарантированы
+                </p>
+                <div class="characteristic">
+                    <p class="charText">Характеристики</p>
+                     <div class="moreChar">
+                        <div class="oneChar">
+                            <p class="oneCharText">Тип услуги</p>
+                            <p class="oneCharText">Окрашивание</p>
+                        </div>
+                        <div class="oneChar1">
+                            <p class="oneCharText">Зона</p>
+                            <p class="oneCharText">Любой цвет / Сложные техники</p>
+                        </div>
+                        <div class="oneChar">
+                            <p class="oneCharText">Сбор</p>
+                            <p class="oneCharText">Окрашивание</p>
+                        </div>
+                     </div>   
+                      
+                </div>
+                <p class="price">от 2 000Р</p>
+            </div>
+        </div>
+    <section class="booking-section">
+        <div class="booking-container">
+            <h2 class="booking-title">Записаться</h2>
+
+            <form id="bookingForm" class="booking-form" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                        <span class="error-msg" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
+                        <span class="error-msg" id="phoneError"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group select-group">
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected hidden>Услуга</option>
+                            <option value="Макияж">Макияж</option>
+                            <option value="Стрижка">Стрижка</option>
+                            <option value="Окрашивание">Окрашивание</option>
+                            <option value="Маникюр">Маникюр</option>
+                        </select>
+                        <span class="select-arrow"></span>
+                        <span class="error-msg" id="serviceError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="date" id="date" name="date" placeholder="Дата посещения" required>
+                        <span class="error-msg" id="dateError"></span>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Отправить</button>
+            </form>
+        </div>
+    </section>
+</main>
+    <footer>
+        <div class="header">
+            <div class="parts">
+                <a href="/public/about.html" class="headerText">О нас</a>
+                <a href="/public/services.html" class="headerText">Услуги</a>
+            </div>
+            <a href="/public/index.html">
+                <img src="/public/images/logo.svg" alt="logo" id="logo" width="203.46px">
+            </a>
+            <div class="parts">
+                <a href="/public/contacts.html" class="headerText">Контакты</a>
+                <a href="" class="headerText">Записаться</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<div class="toast-notification" id="successToast">
+    <div class="toast-text">Спасибо! Мы свяжемся с вами в ближайшее время.</div>
+</div>
+
+</html>

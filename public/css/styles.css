@@ -1,0 +1,1028 @@
+@font-face {
+    font-family: 'monr';
+    src: url(/public/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'monl';
+    src: url(/public/fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: 'miama';
+    src: url(/public/fonts/miamanueva.ttf);
+}
+
+@font-face {
+    font-family: 'gloria';
+    src: url(/public/fonts/gloriascript.ttf);
+}
+
+header {
+    margin: 0 auto;
+    max-width: 926.76px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.parts {
+    margin-top: 54px;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.headerText {
+    font-family: 'monr';
+    font-size: 24px;
+    color: rgba(63, 60, 60, 0.54);
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.headerText:hover {
+    color: #F0A2CC;
+    transform: scale(1.08);
+}
+
+#logo {
+    margin-top: 2px;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#logo:hover {
+    transform: scale(1.08);
+}
+
+.contacts {
+    max-width: 1329px;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 83px;
+}
+
+.headCon {
+    font-family: 'miama';
+    font-size: 96px;
+    color: #F0A2CC;
+    text-align: center;
+}
+
+.infomap {
+    margin-top: 109px;
+    display: flex;
+    flex-direction: row;
+    gap: 92px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.infopart {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.headInP {
+    font-family: 'miama';
+    font-size: 36px;
+    color: #F0A2CC;
+}
+
+.descInP {
+    font-family: 'monr';
+    font-size: 24px;
+    color: #8B8686;
+}
+
+.map {
+    padding-top: 29px;
+}
+
+.toast-notification {
+    position: fixed;
+    bottom: 30px;
+    left: -100%;
+    background-color: #fff;
+    border: 2px dashed #F0A2CC;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(240, 162, 204, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 9999;
+    transition: left 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.toast-notification.show {
+    left: 30px;
+}
+
+.toast-icon {
+    font-size: 28px;
+    color: #F0A2CC;
+}
+
+.toast-text {
+    font-family: 'monr', sans-serif;
+    font-size: 16px;
+    color: #8B8686;
+}
+
+.booking-section {
+    width: 1087px;
+    height: 464px;
+    margin: 100px auto;
+    box-sizing: border-box;
+}
+
+.booking-container {
+    border: 2px dashed #F0A2CC;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+
+.booking-title {
+    font-family: 'miama';
+    font-size: 54px;
+    color: #8B8686;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.booking-form .form-row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.booking-form .form-group {
+    flex: 1;
+    position: relative;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px solid #F0A2CC;
+    padding: 10px 0;
+    font-family: 'monl';
+    font-size: 24px;
+    color: #8B8686;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.booking-form input::placeholder,
+.booking-form select:invalid {
+    color: #C7C1C1;
+}
+
+.booking-form select {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.select-arrow {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    pointer-events: none;
+    width: 15px;
+    height: 15px;
+}
+
+.select-arrow::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-right: 1.5px solid #F0A2CC;
+    border-bottom: 1.5px solid #F0A2CC;
+    transform: rotate(45deg);
+}
+
+.submit-btn {
+    display: block;
+    margin: 30px auto 0;
+    background-color: #F0A2CC;
+    color: #fff;
+    font-family: 'monl';
+    font-size: 24px;
+    padding: 15px 60px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.submit-btn:hover {
+    border: 2px solid #F0A2CC;
+    background-color: transparent;
+    color: #F0A2CC;
+    transform: scale(1.08);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(74%) sepia(30%) saturate(500%) hue-rotate(280deg) brightness(95%) contrast(90%);
+    cursor: pointer;
+}
+
+.error-msg {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    font-family: 'monl';
+    font-size: 12px;
+    color: #ff6b6b;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.form-group.invalid .error-msg {
+    opacity: 1;
+}
+
+.form-group.invalid input,
+.form-group.invalid select {
+    border-bottom-color: #ff6b6b;
+}
+
+footer {
+    margin: 0 auto;
+    margin-top: 141px;
+    max-width: 926.76px;
+}
+
+.blockteam {
+    max-width: 1611px;
+    margin: 0 auto;
+    margin-top: 56px;
+}
+
+.contentTeam {
+    display: flex;
+    flex-direction: column;
+    gap: 63px;
+}
+
+.headTeam {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.meetText {
+    padding-left: 88px;
+    font-family: 'miama';
+    font-size: 96px;
+    color: #F0A2CC;
+}
+
+.teamText {
+    padding-left: 551px;
+    font-family: 'gloria';
+    font-size: 96px;
+    color: #A69494;
+}
+
+.masters {
+    display: flex;
+    flex-direction: column;
+    gap: 71px;
+}
+
+.master {
+    display: flex;
+    flex-direction: row;
+    gap: 82px;
+}
+
+.textsMast {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.jobtitle {
+    font-family: 'miama';
+    font-size: 40px;
+    color: #F0A2CC;
+}
+
+.descJob {
+    font-family: 'monl';
+    font-size: 20px;
+    color: #A69494;
+}
+
+#pink {
+    color: #F0A2CC;
+}
+
+.master-img {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.master-img .img-default,
+.master-img .img-hover {
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.master-img .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.master-img:hover .img-hover {
+    opacity: 1;
+}
+
+.master-img:hover .img-default {
+    opacity: 0;
+}
+
+.aboutUs {
+    max-width: 1590px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aboutUsText {
+    font-family: 'miama';
+    font-size: 96px;
+    color: #F0A2CC;
+}
+
+.contentAb {
+    display: flex;
+    flex-direction: row;
+    gap: 57px;
+}
+
+.textsAb {
+    padding-top: 252px;
+    display: flex;
+    flex-direction: column;
+    gap: 158px;
+}
+
+.textDesc {
+    font-family: 'miama';
+    font-size: 20px;
+    color: #A69494;
+    line-height: 40px;
+    text-align: left;
+}
+
+.textsAb1 {
+    padding-top: 296px;
+    display: flex;
+    flex-direction: column;
+    gap: 178px;
+}
+
+.textDesc1 {
+    font-family: 'miama';
+    font-size: 20px;
+    color: #A69494;
+    line-height: 40px;
+    text-align: right;
+}
+
+.herosec {
+    width: 1920px;
+    min-height: 100vh;
+    background-image: url('/public/images/main/backgl.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.herosec header {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.hero-logo-big {
+    width: 900px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8));
+}
+
+.hero-subtitle {
+    font-family: 'monr';
+    font-size: 24px;
+    color: #8B8686;
+    margin-top: -170px;
+}
+
+.slogan {
+    max-width: 1584px;
+    margin-top: 106px;
+    margin-left: 336px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.empathySl {
+    font-family: 'miama';
+    font-size: 96px;
+    color: #F0A2CC;
+}
+
+.textsSl {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.slogandesc {
+    padding-left: 132px;
+    font-family: 'monr';
+    font-size: 32px;
+    width: 896px;
+    line-height: 60px;
+    color: #988282;
+}
+
+#locon {
+    margin-left: 580px;
+}
+
+.services {
+    margin-top: 100px;
+    max-width: 1856px;
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+    background-image: url('/public/images/main/backus1.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.servicesHead {
+    padding-left: 993px;
+    font-family: 'miama';
+    font-size: 96px;
+    color: #F0A2CC;
+}
+
+.servicesList {
+    max-width: 1171px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.serviceOne {
+    padding-bottom: 15px;
+    width: 1171px;
+    border-bottom: 2px solid #A69494;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleServ {
+    font-family: 'monr';
+    font-size: 36px;
+    color: rgba(152, 130, 130, 0.86);
+}
+
+#arrow1 {
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#arrow1:hover {
+    transform: scale(1.08);
+}
+
+.decorBlock {
+    max-width: 1844px;
+    margin: 0 auto;
+    margin-top: 350px;
+}
+
+.empathyDec {
+    z-index: 999;
+    position: absolute;
+    top: 2950px;
+    left: 235px;
+    font-family: 'miama';
+    font-size: 150px;
+    color: #F0A2CC;
+}
+
+.pics {
+    display: flex;
+    flex-direction: row;
+    gap: 153px;
+}
+
+#dec1 {
+    margin-top: 260px;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#dec2 {
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#dec3 {
+    margin-top: 592px;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#dec1:hover,
+#dec2:hover,
+#dec3:hover {
+    transform: scale(1.08);
+}
+
+.aboutMiniBlock {
+    max-width: 1593px;
+    margin: right auto;
+    margin-top: 196px;
+    margin-bottom: 140px;
+    display: flex;
+    flex-direction: row;
+    gap: 273px;
+}
+
+.aboutTextsMini {
+    margin-top: 58px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.titleAbout {
+    margin-left: 400px;
+    display: flex;
+    flex-direction: row;
+    gap: 49px;
+}
+
+.titleMini {
+    font-family: 'miama';
+    font-size: 96px;
+    color: #F0A2CC;
+}
+
+#arrowpink {
+    width: 54px;
+    height: 54px;
+    margin-top: 35px;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#arrowpink:hover {
+    transform: scale(1.08);
+}
+
+.descMini {
+    font-family: 'monr';
+    font-size: 32px;
+    width: 939px;
+    color: #A69494;
+    text-align: right;
+}
+
+.herosecservice {
+    width: 1920px;
+    min-height: 1055px;
+    background-image: url('/public/images/services/backgl.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.services-hero-content {
+    position: relative;
+    z-index: 10;
+    margin-top: 270px;
+    margin-left: 74px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.services-hero-title {
+    font-family: 'miama';
+    font-size: 260px;
+    color: #F0A2CC;
+    font-weight: normal;
+    line-height: 0.8;
+    margin-bottom: 0;
+}
+
+.services-hero-subtitle {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 180px;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.sub-left {
+    font-family: 'monr';
+    font-size: 24px;
+    color: #8B8686;
+    white-space: nowrap;
+}
+
+.sub-right {
+    font-family: 'monr';
+    font-size: 24px;
+    color: #8B8686;
+    white-space: nowrap;
+}
+
+.sloganServ {
+    max-width: 1074px;
+    margin: 0 auto;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+}
+
+.sloganServHead {
+    font-family: 'gloria';
+    font-size: 96px;
+    color: #A69494;
+    text-align: center;
+}
+
+.descSlogan {
+    width: 1074px;
+    font-family: 'monl';
+    font-size: 32px;
+    color: #A69494;
+    text-align: center;
+}
+
+.sloganLogo {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+hr {
+    margin: 0 auto;
+    width: 287px;
+    border: 0.4px solid #F0A2CC;
+}
+
+.sloganLogoText {
+    font-family: 'gloria';
+    font-size: 90px;
+    color: #F0A2CC;
+    text-align: center;
+}
+
+.listServiceCarousel {
+    max-width: 1785px;
+    margin: 0 auto;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
+.serviceOneCarousel {
+    width: 595px;
+    height: 568px;
+    background-image: url(/public/images/services/makeup.png);
+    display: flex;
+    flex-direction: column;
+    gap: 93px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.serviceOneCarousel1 {
+    width: 595px;
+    height: 568px;
+    background-image: url(/public/images/services/haircut.png);
+    display: flex;
+    flex-direction: column;
+    gap: 93px;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceOneCarousel2 {
+    width: 595px;
+    height: 568px;
+    background-image: url(/public/images/services/manicure.png);
+    display: flex;
+    flex-direction: column;
+    gap: 93px;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceOneCarousel3 {
+    width: 595px;
+    height: 568px;
+    background-image: url(/public/images/services/lashes.png);
+    display: flex;
+    flex-direction: column;
+    gap: 93px;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceOneCarousel4 {
+    width: 595px;
+    height: 568px;
+    background-image: url(/public/images/services/coloring.png);
+    display: flex;
+    flex-direction: column;
+    gap: 93px;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleService {
+    font-family: 'miama';
+    font-size: 70px;
+    color: #FFFFFF;
+}
+
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 0px;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.serviceOneCarousel,
+.serviceOneCarousel1,
+.serviceOneCarousel2,
+.serviceOneCarousel3,
+.serviceOneCarousel4 {
+    width: 595px;
+    min-width: 595px;
+    height: 568px;
+    display: flex;
+    flex-direction: column;
+    gap: 93px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.serviceOneCarousel {
+    background-image: url(/public/images/services/makeup.png);
+}
+
+.serviceOneCarousel1 {
+    background-image: url(/public/images/services/haircut.png);
+}
+
+.serviceOneCarousel2 {
+    background-image: url(/public/images/services/manicure.png);
+}
+
+.serviceOneCarousel3 {
+    background-image: url(/public/images/services/lashes.png);
+}
+
+.serviceOneCarousel4 {
+    background-image: url(/public/images/services/coloring.png);
+}
+
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+    border: none;
+}
+
+.carousel-btn:hover img {
+    filter: invert(1);
+}
+
+.carousel-btn.prev {
+    left: 20px;
+}
+
+.carousel-btn.next {
+    right: 20px;
+}
+
+.carousel-btn img {
+    width: 24px;
+    height: 24px;
+    transition: filter 0.3s ease;
+}
+
+.arrow-left {
+    transform: rotate(180deg);
+}
+
+
+.titleService1 {
+    font-family: 'miama';
+    font-size: 55px;
+    color: #FFFFFF;
+}
+
+.more {
+    width: 324px;
+    height: 83px;
+    border: 3px solid #FFFFFF;
+    background-color: transparent;
+    font-family: 'monr';
+    font-size: 40px;
+    color: #FFFFFF;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+}
+
+.more:hover {
+    transform: scale(1.08);
+    border: none;
+    background-color: #FFFFFF;
+    color: #000000;
+    mix-blend-mode: screen;
+}
+.contentfull {
+    max-width: 1480px;
+    margin: 0 auto;
+    margin-top: 84px;
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+}
+.parttwoContent {
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.titleOfService {
+    font-family: 'miama';
+    font-size: 48px;
+    color: #E27FB4;
+}
+.titleOfService1 {
+    font-family: 'miama';
+    font-size: 40px;
+    color: #E27FB4;
+}
+.jobs {
+    font-family: 'monl';
+    font-size: 32px;
+    color: #F0A2CC;
+}
+.descOfService {
+    width: 726px;
+    font-family: 'monr';
+    font-size: 24px;
+    color: #A69494 ;
+}
+
+.characteristic {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.charText {
+    font-family: 'monl';
+    font-size: 32px;
+    color: #F0A2CC;
+}
+.moreChar {
+    max-width: 726px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.oneChar {
+    width: 726px;
+    height: 41px;
+    background-color: #F9DBE4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.oneChar1 {
+    width: 726px;
+    height: 41px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.oneCharText {
+    font-family: 'monl';
+    font-size: 24px;
+    color: #938080;
+}
+.price {
+    font-family: 'monr';
+    font-size: 40px;
+    color:  #F0A2CC;
+}

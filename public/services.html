@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги</title>
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <script src="/public/js/appointment.js"></script>
+    <script src="/public/js/carousel.js"></script>
+</head>
+
+<body>
+    <section class="herosecservice">
+        <header>
+            <div class="header">
+                <div class="parts">
+                    <a href="/public/about.html" class="headerText">О нас</a>
+                    <a href="/public/services.html" class="headerText">Услуги</a>
+                </div>
+                <a href="/public/index.html">
+                    <img src="/public/images/logo.svg" alt="logo" id="logo" width="203.46px">
+                </a>
+                <div class="parts">
+                    <a href="/public/contacts.html" class="headerText">Контакты</a>
+                    <a href="#booking" class="headerText">Записаться</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="services-hero-content">
+            <h1 class="services-hero-title">Услуги</h1>
+            <div class="services-hero-subtitle">
+                <span class="sub-left">которые подчеркивают</span>
+                <span class="sub-right">твою нереальность</span>
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="sloganServ">
+            <p class="sloganServHead">Твое преображение</p>
+            <p class="descSlogan">Красота – это лучший индикатор твоего настроения.
+                <br>Мы делаем все, чтобы после визита в Empathy ты уходила с ощущением полета и уверенности.
+                <br>Твоя индивидуальность – наша главная ценность, и мы вкладываем душу в каждую деталь, чтобы ты
+                чувствовала себя нереально
+            </p>
+            <div class="sloganLogo">
+                <hr>
+                </hr>
+                <p class="sloganLogoText">Empathy</p>
+            </div>
+        </div>
+        <div class="carousel-wrapper">
+            <button class="carousel-btn prev" id="prevBtn">
+                <img src="/public/images/main/arrow.png" alt="Назад" class="arrow-left">
+            </button>
+
+            <div class="carousel-container" id="carouselContainer">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="serviceOneCarousel">
+                        <p class="titleService">МАКИЯЖ</p>
+                        <a href="/public/services/makeup.html"><button class="more">Подробнее</button></a>
+                    </div>
+                    <div class="serviceOneCarousel1">
+                        <p class="titleService">СТРИЖКИ</p>
+                        <a href="/public/services/haircut.html"><button class="more">Подробнее</button></a>
+                    </div>
+                    <div class="serviceOneCarousel2">
+                        <p class="titleService">НОГТИ</p>
+                        <a href="/public/services/manicure.html"><button class="more">Подробнее</button></a>
+                    </div>
+                    <div class="serviceOneCarousel3">
+                        <p class="titleService">РЕСНИЦЫ</p>
+                        <a href="/public/services/lashes.html"><button class="more">Подробнее</button></a>
+                    </div>
+                    <div class="serviceOneCarousel4">
+                        <p class="titleService1">ОКРАШИВАНИЕ</p>
+                        <a href="/public/services/coloring.html"><button class="more">Подробнее</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn next" id="nextBtn">
+                <img src="/public/images/main/arrow.png" alt="Вперед" class="arrow-right">
+            </button>
+        </div>
+        <section class="booking-section">
+            <div class="booking-container">
+                <h2 class="booking-title">Записаться</h2>
+
+                <form id="bookingForm" class="booking-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                            <span class="error-msg" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
+                            <span class="error-msg" id="phoneError"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group select-group">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected hidden>Услуга</option>
+                                <option value="Макияж">Макияж</option>
+                                <option value="Стрижка">Стрижка</option>
+                                <option value="Окрашивание">Окрашивание</option>
+                                <option value="Маникюр">Маникюр</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                            <span class="error-msg" id="serviceError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="date" id="date" name="date" placeholder="Дата посещения" required>
+                            <span class="error-msg" id="dateError"></span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="header">
+            <div class="parts">
+                <a href="/public/about.html" class="headerText">О нас</a>
+                <a href="/public/services.html" class="headerText">Услуги</a>
+            </div>
+            <a href="/public/index.html">
+                <img src="/public/images/logo.svg" alt="logo" id="logo" width="203.46px">
+            </a>
+            <div class="parts">
+                <a href="/public/contacts.html" class="headerText">Контакты</a>
+                <a href="" class="headerText">Записаться</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<div class="toast-notification" id="successToast">
+    <div class="toast-text">Спасибо! Мы свяжемся с вами в ближайшее время.</div>
+</div>
+
+</html>
